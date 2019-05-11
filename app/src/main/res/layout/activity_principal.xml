@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal">
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="calcularTotal"
+        android:text="Calcular" />
+
+    <EditText
+        android:id="@+id/FECHA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:hint="Ingrese la Fecha"
+       />
+    <EditText
+        android:id="@+id/PESO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:hint="Ingrese el Peso"
+        />
+    <EditText
+        android:id="@+id/PCG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:hint="Ingrese el Porcentaje de Grasa"
+        />
+
+    <EditText
+        android:id="@+id/KGCG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:hint="Ingrese el Porcentaje Sin Grasa"
+        />
+
+    <EditText
+        android:id="@+id/PSG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:hint="Ingrese los Kgs de Grasa"
+        />
+
+    <EditText
+        android:id="@+id/kgSinGrasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:hint="Ingrese los Kgs sin Grasa"
+        />
+
+    <Button
+        android:id="@+id/botonInsertar"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="insertarDatos"
+        android:text="INSERTAR" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/MTB0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/MTB1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/MTB2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/MTB3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/grasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="" />
+
+
+
+
+</LinearLayout>

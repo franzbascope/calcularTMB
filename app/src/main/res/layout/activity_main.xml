@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:text="Bienvenido, Calcula tus Calorias"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        android:layout_marginTop="10dp"
+
+        <Button
+
+            android:id="@+id/button"
+            android:padding="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:onClick="accionBoton"
+            android:text="Selecciona tu edad" />
+
+        <EditText
+            android:id="@+id/txtEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:text="Edad: "
+            android:inputType="none" />
+
+    </LinearLayout>
+
+
+
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_marginTop="5dp"
+android:textStyle="bold"
+android:text="Seleccione su Genero" />
+
+
+<RadioGroup
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+
+<RadioButton
+    android:id="@+id/radioMasculino"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Masculino" />
+
+<RadioButton
+    android:id="@+id/radioFemenino"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Femenino" />
+</RadioGroup>
+
+<EditText
+android:id="@+id/txt_peso"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:layout_marginTop="10dp"
+android:ems="10"
+android:hint="Ingrese su Peso "
+android:inputType="numberDecimal" />
+
+<RadioGroup
+android:orientation="horizontal"
+android:layout_marginTop="0dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+
+
+<RadioButton
+    android:id="@+id/radioKilos"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Kgs" />
+
+<RadioButton
+    android:id="@+id/radioLibras"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Libs" />
+</RadioGroup>
+
+<EditText
+android:id="@+id/txt_estatura"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+android:ems="10"
+android:hint="Ingrese su Estatura en CM"
+android:inputType="number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:text="Que Actividad Realizas?" />
+
+
+<Spinner
+android:id="@+id/spinner"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@android:drawable/btn_dropdown"
+android:spinnerMode="dropdown" />
+
+<Button
+android:id="@+id/calcular"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/editText"
+android:layout_centerHorizontal="true"
+android:onClick="calcular"
+android:text="Calcular" />
+
+
+    </LinearLayout>

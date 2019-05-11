@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name='db_v1'>
+
+        CREATE TABLE tbl_historial
+        (
+            historialId INTEGER NOT NULL,
+            fecha TEXT NOT NULL ,
+            peso REAL,
+            porcentajeGrasa REAL,
+            kgGrasa REAL,
+            porcentajeSinGrasa REAL,
+            kgSinGrasa REAL,
+            tmb  INTEGER NOT NULL ,
+            PRIMARY KEY (historialId)
+
+        );
+
+
+
+
+    </string>
+
+
+
+
+
+</resources>
